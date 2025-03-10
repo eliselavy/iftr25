@@ -1,0 +1,31 @@
+on: [workflow_dispatch]
+
+name: GitHub Actions Ipynb for preflight
+jobs:
+  preflight:
+    runs-on: ubuntu-latest
+    name: Ipynb for preflight
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v3
+      - name: Extract branch name
+        shell: bash
+        run: echo "GitHub ref_name ${{ github.ref_name }}"
+        id: extract_branch
+      - name: preflight
+        id: preflight
+        uses: c2dh/journal-of-digital-history-ipynb-preflight-action@master
+        with:
+          notebook: 'article.ipynb'
+          functions: 'checkkernel,checkcitation,checkoutput,checkhtml,checkjavascript,checktags,checkurls'
+          output_md: 'report.md'
+      # Use the output from the `preflight` step
+      - name: Use the output
+        run: echo "Notebook path ${{ steps.preflight.outputs.notebook_path }} - workspace ${{ steps.preflight.outputs.workspace }}"
+      - name: commit changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          file_pattern: '*.md'
+      - name: Run shell cmd
+        run: echo "https://github.com/${{github.repository}}/commit/${{github.sha}}/checks/${{github.run_id}}"
+
