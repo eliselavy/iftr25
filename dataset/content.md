@@ -1,0 +1,2 @@
+
+Bk GRAND BAL PARE ET DEGUISE. BAL DE SOUSCRIPTION I»ATl organise 1 LICS JKXJ3VES OENS DE DIEKIRCH, IjUOTDI, 8 1875, DANS LA SALLE DE L'HOTEL DES ARDENNES, A 8 HEURES DU SOIR. La Hate do souscription eat d6poaee a I'Hotel dea Ardennes et au bureau du „Volktfreund". Le prix d'entr6e estfix 6 a fr. 3.75 pour les soußcripteurs. A la caisae 5 fr. Les cartes d'entree sont personnelloa. POLICE : Le masque est interdit. Comme minimum de deguisement le bonnet da carnaval est de rigueur; on peut so le procurer au prix de.revient ala caisae. I<a 4 ominission.
