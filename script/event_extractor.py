@@ -1,0 +1,76 @@
+import os
+import json
+import anthropic
+from typing import Dict, Any, Optional
+from dotenv import load_dotenv
+
+class EventExtractor:
+    def __init__(self, api_key: Optional[str] = None):
+        """Initialize the EventExtractor with an Anthropic API key."""
+        self.api_key = api_key 
+        if not self.api_key:
+            raise ValueError("Anthropic API key must be provided or set as ANTHROPIC_API_KEY environment variable")
+        self.client = anthropic.Anthropic(api_key=self.api_key)
+    
+    def extract_event_json(self, text: str) -> Dict[str, Any]:
+        """Extract event information from text and return as JSON."""
+        prompt = f"""
+        Please analyze the following event announcement and extract key details into a JSON structure.
+        Include the following fields if available: event title, organizer, publication date, place, event date.
+        Only extract information that is explicitly stated in the text.
+        
+        Event announcement:
+        {text}
+        
+        Provide ONLY a valid JSON response with no additional text.
+        """
+        
+        response = self.client.messages.create(
+            model="claude-3-7-sonnet-20250219",
+            max_tokens=1000,
+            temperature=0,
+            system="You extract event information from text and return it as valid JSON with no additional text.",
+            messages=[
+                {"role": "user", "content": prompt}
+            ]
+        )
+        
+        # Extract JSON from the response
+        try:
+            # The response content should be just JSON
+            json_str = response.content[0].text
+            return json.loads(json_str)
+        except (json.JSONDecodeError, IndexError) as e:
+            # If there's an issue parsing the JSON
+            return {"error": f"Failed to parse JSON: {str(e)}", "raw_response": response.content[0].text}
+
+def main():
+    # Take from .env
+    # Load environment variables from a .env file
+    load_dotenv()
+
+    # Retrieve the API key from the environment variable
+    api_key = os.getenv("ANTHROPIC_API_KEY")
+    print(api_key)
+    
+    if not api_key:
+        print("Please set your ANTHROPIC_API_KEY environment variable")
+        return
+    
+    extractor = EventExtractor(api_key)
+    
+    # Example text
+    event_text = """
+    ASSOCIATION DES COMMERQANTS ESCH. SOIREE
+    Escher Tageblatt Newspaper
+    Saturday, February 22, 1936 – p.3
+    Personal use (no export) — provided by
+    Luxembourg National Library
+    * ASSOCIATION DES COMMERQANTS ESCH. SOIREE *CARNAVALESQUE* ä l'hötel de la Poste 1 u n d i de *carnaval*
+    """
+    
+    result = extractor.extract_event_json(event_text)
+    print(json.dumps(result, indent=2))
+
+if __name__ == "__main__":
+    main()
