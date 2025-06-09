@@ -1,0 +1,68 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Central Advertisement Box -->
+  <rect x="300" y="250" width="200" height="100" 
+        fill="#FFE4B5" stroke="#8B4513" stroke-width="3" rx="10"/>
+  <text x="400" y="290" text-anchor="middle" 
+        font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#8B4513">
+    ADVERTISEMENT
+  </text>
+ 
+
+  <!-- Arrows and Labels -->
+  
+  <!-- redoute (top-left) -->
+  <text x="150" y="120" text-anchor="middle" 
+        font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#4169E1">
+    Redoute
+  </text>
+  <line x1="200" y1="140" x2="320" y2="240" 
+        stroke="#4169E1" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- mi-carême (top-right) -->
+  <text x="650" y="120" text-anchor="middle" 
+        font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#DC143C">
+    Mi-carême
+  </text>
+  <line x1="600" y1="140" x2="480" y2="240" 
+        stroke="#DC143C" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- carnaval (left) -->
+  <text x="120" y="300" text-anchor="middle" 
+        font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#32CD32">
+    Carnaval
+  </text>
+  <line x1="180" y1="300" x2="290" y2="300" 
+        stroke="#32CD32" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- carnavalesque (right) -->
+  <text x="680" y="300" text-anchor="middle" 
+        font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#FF8C00">
+    Carnavalesque
+  </text>
+  <line x1="620" y1="300" x2="510" y2="300" 
+        stroke="#FF8C00" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- cavalcade (bottom-left) -->
+  <text x="150" y="480" text-anchor="middle" 
+        font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#9932CC">
+    Cavalcade
+  </text>
+  <line x1="200" y1="460" x2="320" y2="360" 
+        stroke="#9932CC" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- bal travesti (bottom-right) -->
+  <text x="650" y="480" text-anchor="middle" 
+        font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#FF1493">
+    Bal travesti
+  </text>
+  <line x1="600" y1="460" x2="480" y2="360" 
+        stroke="#FF1493" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+            refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="currentColor"/>
+    </marker>
+  </defs>
+</svg>
