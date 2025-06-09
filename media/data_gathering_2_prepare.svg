@@ -1,0 +1,124 @@
+<svg viewBox="0 0 1100 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Step 1: Aggregate Collections -->
+  <rect x="20" y="120" width="140" height="60" 
+        fill="#E8F4FD" stroke="#2196F3" stroke-width="2" rx="5"/>
+  <text x="90" y="140" text-anchor="middle" 
+        font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1976D2">
+    Aggregate
+  </text>
+  <text x="90" y="155" text-anchor="middle" 
+        font-family="Arial, sans-serif" font-size="12" fill="#1976D2">
+    Collections
+  </text>
+  
+  <!-- Arrow 1 -->
+  <line x1="160" y1="150" x2="190" y2="150" stroke="#666" stroke-width="2"/>
+  <polygon points="190,145 200,150 190,155" fill="#666"/>
+  
+  <!-- Step 2: Eliminate Duplicates -->
+  <rect x="200" y="120" width="140" height="60" 
+        fill="#FFF3E0" stroke="#FF9800" stroke-width="2" rx="5"/>
+  <text x="270" y="140" text-anchor="middle" 
+        font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#F57C00">
+    Eliminate
+  </text>
+  <text x="270" y="155" text-anchor="middle" 
+        font-family="Arial, sans-serif" font-size="12" fill="#F57C00">
+    Duplicates
+  </text>
+  
+  <!-- Arrow 2 -->
+  <line x1="340" y1="150" x2="370" y2="150" stroke="#666" stroke-width="2"/>
+  <polygon points="370,145 380,150 370,155" fill="#666"/>
+  
+  <!-- Step 3: Keep Relevant Info -->
+  <rect x="380" y="120" width="140" height="60" 
+        fill="#E8F5E8" stroke="#4CAF50" stroke-width="2" rx="5"/>
+  <text x="450" y="140" text-anchor="middle" 
+        font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#388E3C">
+    Keep Only
+  </text>
+  <text x="450" y="155" text-anchor="middle" 
+        font-family="Arial, sans-serif" font-size="12" fill="#388E3C">
+    Relevant Info
+  </text>
+  
+  <!-- Arrow 3 -->
+  <line x1="520" y1="150" x2="550" y2="150" stroke="#666" stroke-width="2"/>
+  <polygon points="550,145 560,150 550,155" fill="#666"/>
+  
+  <!-- Step 4: Reformat Date -->
+  <rect x="560" y="120" width="140" height="60" 
+        fill="#F3E5F5" stroke="#9C27B0" stroke-width="2" rx="5"/>
+  <text x="630" y="140" text-anchor="middle" 
+        font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#7B1FA2">
+    Reformat
+  </text>
+  <text x="630" y="155" text-anchor="middle" 
+        font-family="Arial, sans-serif" font-size="12" fill="#7B1FA2">
+    Date
+  </text>
+  
+  <!-- Arrow 4 -->
+  <line x1="700" y1="150" x2="730" y2="150" stroke="#666" stroke-width="2"/>
+  <polygon points="730,145 740,150 730,155" fill="#666"/>
+  
+  <!-- Step 5: Isolate Month -->
+  <rect x="740" y="120" width="140" height="60" 
+        fill="#FFEBEE" stroke="#F44336" stroke-width="2" rx="5"/>
+  <text x="810" y="140" text-anchor="middle" 
+        font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#D32F2F">
+    Isolate
+  </text>
+  <text x="810" y="155" text-anchor="middle" 
+        font-family="Arial, sans-serif" font-size="12" fill="#D32F2F">
+    Month
+  </text>
+  
+  <!-- Arrow 5 -->
+  <line x1="880" y1="150" x2="910" y2="150" stroke="#666" stroke-width="2"/>
+  <polygon points="910,145 920,150 910,155" fill="#666"/>
+  
+  <!-- Step 6: Filter Month -->
+  <rect x="920" y="120" width="140" height="60" 
+        fill="#E0F2F1" stroke="#009688" stroke-width="2" rx="5"/>
+  <text x="990" y="140" text-anchor="middle" 
+        font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#00695C">
+    Filter
+  </text>
+  <text x="990" y="155" text-anchor="middle" 
+        font-family="Arial, sans-serif" font-size="12" fill="#00695C">
+    Month
+  </text>
+  
+  <!-- Title -->
+  <text x="500" y="30" text-anchor="middle" 
+        font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#333">
+    Data gathering prepare
+  </text>
+  
+  <!-- Step numbers -->
+  <circle cx="90" cy="100" r="12" fill="#666"/>
+  <text x="90" y="105" text-anchor="middle" 
+        font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">1</text>
+  
+  <circle cx="270" cy="100" r="12" fill="#666"/>
+  <text x="270" y="105" text-anchor="middle" 
+        font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">2</text>
+  
+  <circle cx="450" cy="100" r="12" fill="#666"/>
+  <text x="450" y="105" text-anchor="middle" 
+        font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">3</text>
+  
+  <circle cx="630" cy="100" r="12" fill="#666"/>
+  <text x="630" y="105" text-anchor="middle" 
+        font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">4</text>
+  
+  <circle cx="810" cy="100" r="12" fill="#666"/>
+  <text x="810" y="105" text-anchor="middle" 
+        font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">5</text>
+  
+  <circle cx="990" cy="100" r="12" fill="#666"/>
+  <text x="990" y="105" text-anchor="middle" 
+        font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">6</text>
+</svg>
